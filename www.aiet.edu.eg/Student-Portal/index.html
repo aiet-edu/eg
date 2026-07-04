@@ -459,7 +459,21 @@ function openResult() {
     return false;
 }
 </script>
+<script>
+function login() {
+    const id = document.querySelector('input[name="IDNumber"]').value;
 
+    const myID = "30409121802503"; // حط رقمك القومي هنا
+
+    if (id === myID) {
+        window.open("result.pdf", "_blank");
+    } else {
+        alert("الرقم القومي غير صحيح");
+    }
+
+    return false;
+}
+</script>
     </body>
 
 <!-- Mirrored from www.aiet.edu.eg/Student-Portal/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jul 2026 16:34:49 GMT -->
